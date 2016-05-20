@@ -1,0 +1,32 @@
+{
+  "name": "fcc-visualize-scatterplot",
+  "description": "Free Code Camp - use D3 to create a scatterplot Graph",
+  "main": "server.js",
+  "authors": [
+    "Jennifer Bland"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "free",
+    "code",
+    "camp",
+    "visualize",
+    "scatterplot",
+    "d3",
+    "jennifer",
+    "bland"
+  ],
+  "homepage": "https://github.com/ratracegrad/fcc-visualize-scatterplot",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/javascripts",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^3.5.17",
+    "jquery": "^2.2.4"
+  }
+}

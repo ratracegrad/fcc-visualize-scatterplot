@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ratracegrad/fcc-visualize-scatterplot.git"
+    "url": "git+https://github.com/ratracegrad/fcc-visualize-scatterplot.git",
+    "postinstall": "bower cache clean && bower install"
   },
   "keywords": [
     "free",

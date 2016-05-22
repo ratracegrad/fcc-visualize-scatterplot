@@ -4,12 +4,13 @@
   "description": "Free Code Camp - use D3 to create a scatterplot Graph",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower cache clean && bower install",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ratracegrad/fcc-visualize-scatterplot.git",
-    "postinstall": "bower cache clean && bower install"
+    "url": "git+https://github.com/ratracegrad/fcc-visualize-scatterplot.git"
   },
   "keywords": [
     "free",

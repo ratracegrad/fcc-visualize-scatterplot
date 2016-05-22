@@ -1,5 +1,6 @@
 body {
-    font: 10px sans-serif;
+    font: 14px sans-serif;
+    margin-top: 75px;
 }
 
 .axis path,
@@ -15,12 +16,12 @@ body {
 
 .title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .subtitle {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 .label {

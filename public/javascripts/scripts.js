@@ -33,8 +33,6 @@ $(document).ready(function() {
         var fastestTime = data[0].Seconds;
 
         data.forEach(function(d) {
-            // d.sepalLength = +d.sepalLength;
-            // d.sepalWidth = +d.sepalWidth;
             d.timeDiff = d.Seconds - fastestTime;
 
             // add doping legend
@@ -46,8 +44,6 @@ $(document).ready(function() {
 
         });
 
-        // x.domain(d3.extent(data, function(d) { return d.sepalWidth; })).nice();
-        // y.domain(d3.extent(data, function(d) { return d.sepalLength; })).nice();
         x.domain(d3.extent(data, function(d) { return d.timeDiff; })).nice();
         y.domain(d3.extent(data, function(d) { return d.Place; })).nice();
 
@@ -82,9 +78,6 @@ $(document).ready(function() {
                 .attr("cx", function(d) { return x(d.timeDiff); })
                 .attr("cy", function(d) { return y(d.Place); })
                 .style("fill", function(d) { return color(d.legend); });
-        // .attr("cx", function(d) { return x(d.sepalWidth); })
-        // .attr("cy", function(d) { return y(d.sepalLength); })
-        // .style("fill", function(d) { return color(d.species); });
 
         svg.selectAll(".dot")
                 .data(data)
